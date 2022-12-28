@@ -5,9 +5,6 @@ from discord.ext import commands
 
 bot = commands.Bot(command_prefix="¿", intents=discord.Intents.all())
 
-my_secret = os.environ['TOKEN']
-
-
 async def load_extensions():
     for filename in os.listdir("./cogs"):
         if filename.endswith(".py"):
@@ -17,7 +14,7 @@ async def load_extensions():
 async def main():
     async with bot:
         await load_extensions()
-        await bot.start(my_secret)
+        await bot.start("ODkxNDI4NDE0ODE1MzQyNjQz.GfECn1._0zI3CaZYzv2eLgvqWpjKRe4RugSV0vaTMujxA")
 
 
 @bot.event
