@@ -1,4 +1,3 @@
-from webserver import keep_alive
 import os
 import asyncio
 import discord
@@ -24,8 +23,5 @@ async def main():
 @bot.event
 async def on_ready():
     print("Bot is ready.")
-
-
-keep_alive()
 
 asyncio.run(main())
