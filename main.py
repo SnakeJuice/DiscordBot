@@ -14,7 +14,7 @@ async def load_extensions():
 async def main():
     async with bot:
         await load_extensions()
-        await bot.start("ODkxNDI4NDE0ODE1MzQyNjQz.GfECn1._0zI3CaZYzv2eLgvqWpjKRe4RugSV0vaTMujxA")
+        await bot.start(TOKEN)
 
 
 @bot.event
